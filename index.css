@@ -1,0 +1,29 @@
+body {
+    font-family: "Plus Jakarta Sans,sans-serif";
+    margin: 0px
+}
+
+.logo {
+    /* width: 25%; */
+    /* padding: 2rem 0 3.375rem 2rem; */
+    border-width: 0px 3px 0px 0px;
+    border-color:#3B3C4B;
+    border-style: solid;
+}
+
+.title {
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    border-width: 0px 0px 3px 0px;
+    border-color:#3B3C4B;
+    border-style: solid;
+    margin: 0;
+}
+
+.dark-theme {
+    background-color: #2B2C37;
+    color: #fff;
+}
