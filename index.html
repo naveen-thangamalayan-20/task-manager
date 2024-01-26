@@ -1,14 +1,38 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="./index.css"/>
-        <link href='https://fonts.googleapis.com/css?family=Plus Jakarta Sans' rel='stylesheet'>
-    </head>
-    <body class="dark-theme">
-        <header class="header">
-            <div class="logo">
-                <img src="./assets/logo-light.4fb0dd87.svg" at="logo"></img>
+  <head>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body class="dark-theme">
+    <header class="header">
+      <picture class="logo">
+        <source srcset="/assets/logo-mobile.c1810dc7.svg" media="(max-width: 767px)"/>
+        <img src="./assets/logo-light.4fb0dd87.svg" alt="logo" />
+      </picture>
+      <div class="title">
+        <h1>Platform launch</h1>
+        <div class="launch-buttons-group">
+          <button class="button" id="add-new-task">+ Add new task</button>
+          <div>
+            <button class="dropdown" onclick="onHeaderDropDownClick()">
+              :
+            </button>
+            <div class="dropdown-items dropdown-items-hide">
+              <div class="dropdown-buttons">
+                <button>Edit board</button>
+                <button>Delete board</button>
+              </div>
             </div>
-                <h1>Platform launch</h1>
-        </header>
-    </body>
+          </div>
+        </div>
+      </div>
+    </header>
+    <script src="index.js"></script>
+  </body>
 </html>
